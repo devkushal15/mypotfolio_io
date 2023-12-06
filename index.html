@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio pro</title>
+  <!-- link css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="output.css">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+
+  <!--add boots trap css-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+  <!--add tailwin css-->
+
+  <div class="bg-red-900 w-16 h-12 rounded-2xl fixed flex justify-center items-center right-5 bottom-7 z-[500]">
+    <a href="#hader" class="z-auto"><img src="./image/upicon.png" class="h-12" alt=""></a>
+  </div>
+
+
+
+</head>
+
+<body id="bgmain">
+
+
+  <!--up icon -->
+
+
+
+
+
+
+
+  <div class="resdiv fixed">
+
+
+    <div class="resheader absolute bg-red-900  w-72 lg:hidden hidden">
+
+      <div class="resclose">
+        <img src="./image/cancel(1).png" alt="">
+
+      </div>
+
+      <div class="brand mt-20">
+
+        <h2 class="text-3xl lg:text-3xl ml-4">kushal,s portfolio</h2>
+
+      </div>
+
+
+      <ul class=" resul space-y-8  capitalize  flex-col justify-center items-center border-blue-700  cursor-pointer">
+        <li></li>
+        <li class="text-2xl ml-10 "><a href=""
+            class="no-underline text-white hover:text-black">home</a></li>
+        <li class="text-2xl ml-10"><a href="#about" class="no-underline text-white ">about</a></li>
+        <li class="text-2xl  ml-10"><a href="#service" class="no-underline text-white ">service</a></li>
+        <li class="text-2xl ml-10"><a class="no-underline text-white hover:text-black" href="#myskills">My Skills</a></li>
+
+
+
+        <button class="resbtn">contact me</button>
+      </ul>
+
+      <div class="logo flex justify-around mt-24 ">
+
+        <img src="./image/twitter.png" alt="">
+        <img src="./image/instagram.png" alt="">
+        <img src="./image/facebook.png" alt="">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--nav bar coding start-->
+
+  <header id="hader" class="">
+
+
+    <div class="hambargar lg:hidden max-sm:ml-3">
+
+      <img src="./image/hamburger.png" class="max-sm:w-12" alt="">
+
+    </div>
+
+
+    <nav class="">
+
+      <span class="cursor-pointer w-10 mr-4 ml-4 xl:w-20 max-sm:ml-2 max-sm:w-8"><img src="./image/my logo1.jpeg"
+          alt=""></span>
+
+      <div class="brand">
+
+        <h2 class="text-2xl lg:text-2xl xl:text-5xl">kushal's portfolio</h2>
+
+      </div>
+
+      <ul class="hidden lg:flex">
+        <li class="xl:px-12"><a href="" class="xl:text-3xl">home</a></li>
+        <li class="xl:px-12"><a href="#about" class="xl:text-3xl">about</a></li>
+        <li class="xl:px-12"><a href="#service" class="xl:text-3xl">service</a></li>
+        <li class="xl:px-12"><a href="#myskills" class="xl:text-3xl">My Skills</a></li>
+
+
+
+        <button class="navbtn xl:text-5xl xl:p-10">contact me</button>
+      </ul>
+
+
+      <div class="nighticon ml-4 w-12 max-md:w-9 max-sm:w-8">
+        <img src="./image/nighticon.png" class="" alt="" srcset="">
+      </div>
+
+
+    </nav>
+  </header>
+
+
+  <div class="popupwraper popres">
+
+
+    <div class="card rounded-xl">
+
+      <button class="close closer"><img src="./image/cancel(1).png" alt=""></button>
+
+
+
+
+
+
+      <form class="" name="myform" onsubmit="return chak()" action="https://formspree.io/f/xgejkdan" method="POST">
+        <div class="px-5 py-4">
+          <label for="text" class="form-label font-bold">Enter your name:</label>
+          <input type="text" class="form-control" id="name" placeholder="enter your name" name="user">
+
+
+
+          <div class="alert alert-danger d-flex align-items-center d-none my-3 h-11 " role="alert" id="useralart">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+              <use xlink:href="#exclamation-triangle-fill" />
+            </svg>
+            <div>
+              ** Plese Enter your user name.
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="mb-3 px-5 mt-2">
+          <label for="exampleInputPassword1" class="form-label font-bold">Email address:</label>
+          <input type="email" class="form-control" id="exampleInputPassword1" placeholder="enter  your email"
+            name="email">
+
+
+
+
+
+
+          <div class="alert alert-danger d-flex align-items-center d-none my-3 h-11 " role="alert" id="emailalert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+              <use xlink:href="#exclamation-triangle-fill" />
+            </svg>
+            <div>
+              ** Plese Enter your valid email id.
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="mb-3 px-5 pt-5 pb-3">
+          <label for="exampleInputPassword1" class="form-label font-bold">Enter your profasan:</label>
+
+          <select class="form-select" id="validationCustom04" required>
+            <option value="profasan" name="option" required>select your profasan</option>
+            <option>Web developer</option>
+            <option>Photo Editor</option>
+            <option>Video Editor</option>
+            <option>AI Creater</option>
+            <option>Backend Developer</option>
+          </select>
+
+
+
+          <div class="alert alert-danger d-flex align-items-center d-none my-3 h-11 " role="alert" id="profasan">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+              <use xlink:href="#exclamation-triangle-fill" />
+            </svg>
+            <div>
+              ** Plese Select your profasan.
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+
+        <div class="form-check px-24 pt-0">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" name="chakbox">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+
+
+
+
+
+          <div class="alert alert-danger d-flex align-items-center d-none my-3 h-11 " role="alert" id="chakalert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+              <use xlink:href="#exclamation-triangle-fill" />
+            </svg>
+            <div>
+              ** Plese agrry all policy.
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+        <button type="submit" class="btn btn-primary bg-blue-800 mx-12 mt-3  mb-24 hover:bg-black">Submit</button>
+      </form>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <section class="main lg:flex justify-around items-center xl:pt-20">
+
+
+
+    <div class="maintext">
+
+      <span class="sparrow"> <img class="arrow" src="./image/down-arrow.png" alt=""></span>
+
+      <h1 class="text-3xl lg:text-4xl xl:text-6xl">Kushal Chatterjee</h1>
+
+
+      <span class="spline"><img class="line pt-4  " src="./image/line.png" alt=""></span>
+      <p class="xl:text-xl"> <span id="element" class="font-bold text-(0.5rem)"
+          style="background-color:rgba(212, 102, 12, 0.593);">Frontend Developer</span>Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Quas repudiandae asperiores eaque nam fugit eius consectetur, modi fugiat vero
+        minus assumenda nemo dolore quia harum architecto hic in, quo maiores nesciunt commodi suscipit explicabo
+        nostrum </p>
+
+
+
+      <span><img class="pencilmark w-16" src="./image/pancilziczac.jpg" alt=""></span>
+      <span><img src="./image/square.png" alt=""></span>
+    </div>
+
+
+
+
+    <div class="hi mt-2 xl:w-96 xl:ml-24">
+
+      <div class="mainimg relative top-28 lg:absolute pt-3 xl:top-[13rem]">
+
+
+
+        <img class="rounded-xl " src="./image/artman.jpg" class="img-fluid" alt="">
+
+      </div>
+
+    </div>
+
+
+
+
+    <div class="mainmedia cursor-pointer w-10 lg:w-8 max-md:pl-2">
+
+      <a href="https://www.instagram.com/?utm_source=pwa_homescreen" class="z-50" target="_blank"><img
+          src="./image/instagram.png" class="" alt=""></a>
+      <a href=""><img src="./image/twitter.png" alt=""></a>
+      <a href="https://www.facebook.com/" target="_blank"><img src="./image/facebook.png" alt=""></a>
+
+    </div>
+
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+  <section class="about  lg:flex items-center py-16 h-auto" id="about">
+
+    <div class="slate max-sm:w-[30%] lg:w-[30%] bg-red-900 xl:ml-72" data-aos="fade-right">
+
+      <div class="imgabout max-sm:visible 
+   lg:absolute h-[70vh] xl:top-[75rem]">
+
+
+
+        <img src="./image/aboutme.jpg" class="lg:w-[100%] h-[70vh] rounded-2xl max-sm:h-96 absolute" alt="">
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="text lg:flex flex-col justify-center" data-aos="fade-right">
+
+      <h1 class="capitalize xl:text-6xl max-sm:text-5xl">about <span class="bg-orange-400">me</span></h1>
+
+
+
+      <p class="max-sm:text-justify pt-7 xl:text-xl mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+        quibusdam quam rerum id sunt exercitationem aliquam expedita animi impedit, eligendi ratione accusantium iste
+        architecto consequatur dolores? Dolore obcaecati illum dolorem?</p>
+
+
+      <p class="xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate temporibus officiis
+        harum quae consequatur vero perferendis voluptates, labore ad minima.</p>
+
+
+
+
+      <div class="btngroup">
+
+        <a href="https://tailwindcss.com/docs/hover-focus-and-other-states" target="contact"><button
+            class="btn1  cursor-pointer hover:bg-red-950 bg-black  focus:bg-black capitalize text-white lg:p-2 text-xl rounded-xl xl:text-3xl p-3"><i
+              class="bi bi-telegram"></i> Contact me</button></a>
+
+
+
+        <button class="btn1 btn2 border-2 cursor-pointer border-black lg:w-10 h-11 ml-5  xl:w-16 mt-10"><i
+            class="bi bi-file-person"></i></button>
+
+      </div>
+
+
+    </div>
+
+
+
+  </section>
+
+
+  <div class="mobileabout">
+
+    <img src="./image/aboutme.jpg" alt="">
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <section
+    class="service max-sm: flex flex-column justify-center items-center lg:flex lg:justify-evenly lg:items-center" id="service">
+
+
+
+    <div class="sevicehading text-center max-sm:mt-14 lg:mt-10">
+
+      <h1 class="max-sm:text-5xl lg:text-6xl">Serv<span class="bg-orange-400">ices</span></h1>
+
+    </div>
+
+
+
+
+
+    <div class="servicecontaner  max-sm: w-[90%] mt-10  lg:w-[100%] lg:flex lg:border-2 lg:mt-10">
+
+
+
+
+
+
+
+
+
+
+      <div class="servicecard1 max-sm:border-8 border-black lg:ml-5 lg:w-[90%] lg:border-8 lg:border-black"data-aos="zoom-in-up">
+
+
+        <div class="servicelogo max-sm:pt-24 pl-10 lg:pt-24 lg:pl-10">
+
+          <i class="bi bi-file-earmark-code-fill" style="font-size:2rem;"></i>
+
+        </div>
+
+
+        <h3 class="max-sm:pl-10 mb-10 font-bold lg:pl-10">Freelancer</h3>
+
+        <p class="max-sm:pl-10 text-justify pr-10 lg:pl-5"> As a freelance web developer, my journey has been all about turning ideas into digital realities. I've had the privilege of working on a diverse range of projects, each with its unique challenges and opportunities. Today, I invite you to explore my web development portfolio and discover the exciting world of creativity, innovation, and seamless user experiences</p>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="servicecard1 max-sm:border-8 border-black lg:ml-10 lg:w-[100%] lg:border-8 lg:border-black" data-aos="zoom-in-up">
+
+
+        <div class="servicelogo max-sm:pt-24 pl-10 lg:pt-24 lg:pl-10">
+
+          <i class="bi bi-code-square" style="font-size: 2rem;"></i>
+
+        </div>
+
+
+        <h3 class="max-sm:pl-10 mb-10 font-bold lg:pl-10">Web design
+        </h3>
+
+        <p class="max-sm:pl-10 text-justify pr-10 lg:pl-5">Web design is where art and technology unite, and I consider it my mission to harmonize these elements into captivating online experiences. Whether it's creating a visually stunning website, ensuring seamless navigation, or optimizing for mobile responsiveness, I'm here to transform concepts into visually striking web solutions</p>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="servicecard1 max-sm:border-8 border-black lg:ml-10 lg:w-[100%] lg:border-8 lg:border-black lg:mr-5" data-aos="zoom-in-up">
+
+
+        <div class="servicelogo max-sm:pt-24 pl-10 lg:pt-24 lg:pl-10">
+
+          <i class="bi bi-journal-code" style="font-size: 2rem;"></i>
+
+        </div>
+
+
+        <h3 class="max-sm:pl-10 mb-10 font-bold lg:pl-10">Template Design</h3>
+
+        <p class="max-sm:pl-10 text-justify pr-10 lg:pl-5"> I am thrilled to take you on a journey through the world of template design. As a freelance template designer, I've had the opportunity to create digital blueprints for a variety of projects, each a unique canvas for creativity and functionality. Allow me to provide you with a glimpse into my template design portfolio and the exciting possibilities it holds</p>
+
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+  <section class="myskills max-sm:w-[100%] bg-[#F6F4EB]" id="myskills">
+
+
+
+    <div class="myskillhading text-center mt-5">
+
+      <h1 class="text-5xl">My <span class="bg-orange-400">Skills</span></h1>
+
+    </div>
+
+
+
+
+
+    <div
+      class="girdcard block max-sm:mt-14 lg:grid  lg:grid-cols-3 lg:grid-rows-2 lg:ml-4 lg:mt-24 lg:gap-y-10 lg:gap-x-5">
+
+
+
+
+
+
+
+      <div class="card1 active lg:rounded-xl"data-aos="zoom-in-up">
+
+        <div class="gridcardimg max-sm:w-[90%] max-sm:ml-5">
+          <img src="./image/html2.png" alt="">
+        </div>
+
+
+        <div class="gridcardtext gridcardtextactive ml-5 mt-4">
+          <h4 class="font-bold text-2xl">Html:5</h4>
+
+          <p class="max-sm:text-justify max-sm:mr-2 mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+            quia eius accusantium sequi, minima repellat
+            provident adipisci itaque suscipit dolore!</p>
+
+        </div>
+
+        <div class="gridcardbtn max-sm:ml-5 mt-4 max-sm:mb-8 lg:ml-5 ">
+          <a href="https://tailwindcss.com/docs/installation"
+            class="cursor-pointer text-decoration-none text-black bg-red-900 max-sm:rounded-xl lg:pt-4 pb-2 pl-3 pr-3 lg:rounded-2xl"><button
+              class="text-xl cursor-pointer max-sm:rounded-sm lg:text-2xl">Larn More</button></a>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
+      <!--card 2 here-->
+
+
+
+      <div class="card2 active lg:rounded-xl"data-aos="zoom-in-up">
+
+        <div class="gridcardimg max-sm:w-[90%] max-sm:ml-5">
+          <img src="./image/css2.png" alt="">
+        </div>
+
+
+        <div class="gridcardtext gridcardtextactive ml-5 mt-4">
+          <h4 class="font-bold text-2xl">CSS</h4>
+
+          <p class="max-sm:text-justify max-sm:mr-2 mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+            quia eius accusantium sequi, minima repellat
+            provident adipisci itaque suscipit dolore!</p>
+
+        </div>
+
+        <div class="gridcardbtn max-sm:ml-5 mt-4 max-sm:mb-8 lg:ml-5 ">
+          <a href="https://tailwindcss.com/docs/installation"
+            class="cursor-pointer text-decoration-none text-black bg-red-900 max-sm:rounded-xl lg:pt-4 pb-2 pl-3 pr-3 lg:rounded-2xl"><button
+              class="text-xl cursor-pointer max-sm:rounded-sm lg:text-2xl">Larn More</button></a>
+        </div>
+
+
+      </div>
+
+
+
+
+
+      <!--card3-->
+
+
+
+
+      <div class="card3 active lg:rounded-xl"data-aos="zoom-in-up">
+
+        <div class="gridcardimg max-sm:w-[90%] max-sm:ml-5">
+          <img src="./image/javascript2.avif" alt="">
+        </div>
+
+
+        <div class="gridcardtext gridcardtextactive ml-5 mt-4">
+          <h4 class="font-bold text-2xl">Java Script</h4>
+
+          <p class="max-sm:text-justify max-sm:mr-2 mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+            quia eius accusantium sequi, minima repellat
+            provident adipisci itaque suscipit dolore!</p>
+
+        </div>
+
+        <div class="gridcardbtn max-sm:ml-5 mt-4 max-sm:mb-8 lg:ml-5 ">
+          <a href="https://tailwindcss.com/docs/installation"
+            class="cursor-pointer text-decoration-none text-black bg-red-900 max-sm:rounded-xl lg:pt-4 pb-2 pl-3 pr-3 lg:rounded-2xl"><button
+              class="text-xl cursor-pointer max-sm:rounded-sm lg:text-2xl">Larn More</button></a>
+        </div>
+
+
+      </div>
+
+
+
+
+
+      <!--card4-->
+
+
+
+
+
+
+      <div class="card4 active lg:rounded-xl"data-aos="zoom-in-up">
+
+        <div class="gridcardimg max-sm:w-[90%] max-sm:ml-5">
+          <img src="./image/bootstrap.webp" alt="">
+        </div>
+
+
+        <div class="gridcardtext gridcardtextactive ml-5 mt-4">
+          <h4 class="font-bold text-2xl">Bootstrap</h4>
+
+          <p class="max-sm:text-justify max-sm:mr-2 mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+            quia eius accusantium sequi, minima repellat
+            provident adipisci itaque suscipit dolore!</p>
+
+        </div>
+
+        <div class="gridcardbtn max-sm:ml-5 mt-4 max-sm:mb-8 lg:ml-5 ">
+          <a href="https://tailwindcss.com/docs/installation"
+            class="cursor-pointer text-decoration-none text-black bg-red-900 max-sm:rounded-xl lg:pt-4 pb-2 pl-3 pr-3 lg:rounded-2xl"><button
+              class="text-xl cursor-pointer max-sm:rounded-sm lg:text-2xl">Larn More</button></a>
+        </div>
+
+
+      </div>
+
+
+
+
+      <!--card5-->
+
+
+
+      <div class="card5 active lg:rounded-xl"data-aos="zoom-in-up">
+
+        <div class="gridcardimg max-sm:w-[90%] max-sm:ml-5">
+          <img src="./image/tailwincss.webp" alt="">
+        </div>
+
+
+        <div class="gridcardtext gridcardtextactive ml-5 mt-4">
+          <h4 class="font-bold text-2xl">Tailwincss</h4>
+
+          <p class="max-sm:text-justify max-sm:mr-2 mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+            quia eius accusantium sequi, minima repellat
+            provident adipisci itaque suscipit dolore!</p>
+
+        </div>
+
+        <div class="gridcardbtn max-sm:ml-5 mt-4 max-sm:mb-8 lg:ml-5 ">
+          <a href="https://tailwindcss.com/docs/installation"
+            class="cursor-pointer text-decoration-none text-black bg-red-900 max-sm:rounded-xl lg:pt-4 pb-2 pl-3 pr-3 lg:rounded-2xl"><button
+              class="text-xl cursor-pointer max-sm:rounded-sm lg:text-2xl">Larn More</button></a>
+        </div>
+
+
+      </div>
+
+
+
+
+
+      <!--card6-->
+
+
+
+      <div class="card6 active lg:rounded-xl"data-aos="zoom-in-up">
+
+        <div class="gridcardimg max-sm:w-[90%] max-sm:ml-5">
+          <img src="./image/nodejs.avif" alt="">
+        </div>
+
+
+        <div class="gridcardtext gridcardtextactive ml-5 mt-4">
+          <h4 class="font-bold text-2xl">Node js</h4>
+
+          <p class="max-sm:text-justify max-sm:mr-2 mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+            quia eius accusantium sequi, minima repellat
+            provident adipisci itaque suscipit dolore!</p>
+
+        </div>
+
+        <div class="gridcardbtn max-sm:ml-5 mt-4 max-sm:mb-8 lg:ml-5 ">
+          <a href="https://tailwindcss.com/docs/installation"
+            class="cursor-pointer text-decoration-none text-black bg-red-900 max-sm:rounded-xl lg:pt-4 pb-2 pl-3 pr-3 lg:rounded-2xl"><button
+              class="text-xl cursor-pointer max-sm:rounded-sm lg:text-2xl">Larn More</button></a>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+  </section>
+
+
+
+
+
+  <section class="lg:contactme  w-[100%] min-h-[60vh] flex lg:mt-10" id="contact">
+
+    <div class="leftcontact w-[40%] lg:flex lg:flex-col lg:justify-end lg:items-end max-sm:hidden">
+
+
+
+      <div class="contactbox_left bg-[#dfdcdc] lg:relative lg:left-10 h-auto lg:top-24 max-sm:relative max-sm:top-40" data-aos="fade-left">
+
+
+        <div class="left_contact_hading lg:relative lg:right-8 lg:pt-9">
+
+          <h1 class="font-bold">Contact <span class="bg-orange-300">Me.</span></h1>
+
+        </div>
+
+
+        <div class="lg:pl-9 lg:pt-7 lg:pb-8">
+
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsa, temporibus iste possimus
+            explicabo
+            exercitationem, ex repellendus doloribus minus nisi aperiam fugit</p>
+
+          <p class="lg:mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis velit molestiae, atque sint
+            suscipit libero
+            itaque dolore sed dolorem incidunt ad provident maxime numquam qui modi. Omnis, accusamus?</p>
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="contact_left_footer lg:mb-8 lg:mt-28">
+
+        <div class="lg:flex lg:justify-center lg:items-center">
+          <img src="./image/down-arrow.png" alt="">
+
+        </div>
+
+        <div>
+
+          <div class="lg:ml-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium doloribus
+            dignissimos accusamus fugiat blanditiis. Porro optio tempore dolores quod?</div>
+
+          <div><a href=""> <i class="bi bi-facebook  text-black lg:ml-3" style="font-size:30px"></i><i
+                class="bi bi-instagram text-black lg:ml-3 lg:mr-3" style="font-size:30px"></i><i
+                class="bi bi-twitter text-black" style="font-size:30px"></i></a></div>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="rightcontact  w-[60%] max-sm:w-[100%]">
+
+
+      <form name="myfrom" class="contactbox bg-red-900 flex flex-col  items-center mt-5  lg:rounded-lg max-sm:block max-sm:w-[100%]"action="https://formspree.io/f/xgejkdan" method="POST">
+
+        <h4 class="lg:text-4xl lg:mt-8 max-sm:text-3xl max-sm:pt-5 max-sm:pl-5">Send Me A Message</h4>
+
+        <div class="namecontact mt-4 w-[45vw] flex justify-evenly items-center h-[10vh] max-sm:w-[90%] max-sm:ml-3">
+
+          <input type="text" aria-label="First name" placeholder="Enter Fast Name" class="form-control " name="username"
+            required>
+          <input type="text" aria-label="Last name" class="form-control lg:ml-4 max-sm:ml-3" placeholder="Enter Last Name"
+            name="username" required>
+
+        </div>
+
+        <input type="email" class="lg:w-[45vw] lg:mt-5 lg:h-[7vh] lg:rounded-lg max-sm:w-[90%] max-sm:ml-3 max-sm:h-[7.1vh] max-sm:rounded-lg" placeholder="Enter Your Email Address"
+          name="emailid" required>
+
+        <textarea name="textarea" id="" cols="40" rows="7" class="mt-5 max-sm:ml-4" class="lg:rounded-xl" placeholder="Write Your Message"
+          required>
+
+
+
+        </textarea>
+
+
+        <button class="btn-lg lg:bg-yellow-500 lg:mt-6 lg:mb-5 max-sm:bg-yellow-500 max-sm:ml-20 max-sm:mt-5 max-sm:mb-5" type="submit">Send Message <i
+            class="bi bi-send-check-fill"></i></button>
+
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <section class="footer max-sm:mt-5">
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help the upcoming
+              programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code
+              wants to be simple. We will help programmers build up concepts in different programming languages that
+              include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">Html</a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/">CSS</a></li>
+              <li><a href="http://scanfcode.com/category/android/">Java Script</a></li>
+              <li><a href="http://scanfcode.com/category/templates/">node js</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">Home</a></li>
+              <li><a href="http://scanfcode.com/contact/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">service</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">skills</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+              <a href="#">Scanfcode</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="./app.js"></script>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+
+        offset: 300,
+        duration: 1000
+      }
+
+    );
+  </script>
+
+
+</body>
+
+
+<script>
+
+
+
+
+
+
+
+  var typed = new Typed('#element', {
+    strings: ['Backend Developer', 'Frontend Developer'],
+    typeSpeed: 100,
+  });
+
+
+
+
+
+</script>
+
+
+
+
+</html>
